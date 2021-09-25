@@ -12,8 +12,8 @@ export const options = {
 export default function() {
     group('load test1', () => {
         const res = http.batch([
-            ['GET', 'https://shaastramag.iitm.ac.in'],
-            ['GET', 'https://shaastramag.iitm.ac.in/feature/news-brief']
+            ['GET', 'https://'],
+            ['GET', 'https://']
         ]);
         check(res[0], {
             'status was 200': r => r.status === 200,
